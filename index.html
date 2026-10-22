@@ -1,0 +1,1795 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+  <meta charset="utf-8">
+
+  <!-- LMN Tracking - estes dois scripts cobrem TODO o trackeamento da pagina.
+       Os botoes dos potes apontam direto para o checkout PagAmerican; o track7.js
+       (lpclick=true) cuida do clique. Nao adicionar outro tracker aqui. -->
+  <script src="js/track7.js" defer=""></script>
+  <script type="text/javascript" src="js/track.js" async=""></script>
+  <!-- END LMN Tracking -->
+
+  <title>Exclusive Presentation</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="Exclusive Presentation">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Exclusive Presentation">
+  <meta property="og:description" content="Exclusive Presentation">
+  <meta property="og:image" content="images/ogimage.png">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  <script>!function (i, n) { i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now()) }(window, performance);</script>
+
+  <!-- VSL (vturb): player individual. -->
+  <link rel="preconnect" href="https://cdn.converteai.net">
+  <link rel="preconnect" href="https://cdn.converteai.net" crossorigin="">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="preconnect" href="https://license.vturb.com" crossorigin="">
+
+  <!-- CSS embutido (antes: css/fonts.css e css/style.css externos, que bloqueavam a 1a pintura) -->
+  <style>
+/* Font-faces locais (Poppins, Roboto, Montserrat) */
+@font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w0aXpsog.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w9aXpsog.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w2aXpsog.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXpsog.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aXo.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLBT5Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(fonts/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+      unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+      unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+      unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+      unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+      unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+      unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+      unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+      unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+      unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+  </style>
+  <style>
+/* ============================================================
+   600vapo - SodaPeak VSL 6.0.0
+   Estrutura: base -> secoes da pagina -> componentes portados
+   (pricing table, reviews, purchase notification).
+   Para replicar em outro produto: trocar cores da marca,
+   imagens e textos no index.html + CONFIG no js/main.js.
+   ============================================================ */
+
+/* ---------- Base ---------- */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #000;
+  color: #000;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button {
+  border: none;
+  outline: 0;
+  background: 0 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Blocos revelados pelo player no momento do pitch (js/main.js) */
+.esconder {
+  display: none;
+}
+
+/* ---------- Barra de atencao ---------- */
+.attention-bar {
+  background: #c61111;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ---------- VSL ---------- */
+.video-section {
+  background: #000;
+  padding-top: 30px;
+}
+
+.video-section .video-wrap {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .video-section {
+    padding-top: 0;
+  }
+}
+
+/* ---------- Banner da oferta (esconder) ---------- */
+.reveal-banner {
+  background: #414141;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.reveal-banner h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #ffeb00;
+}
+
+.reveal-banner .countdown {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .reveal-banner h2 {
+    font-size: 16px;
+  }
+
+  .reveal-banner .countdown {
+    font-size: 36px;
+  }
+}
+
+/* ---------- Oferta: precos + depoimentos (esconder) ---------- */
+.offer-section {
+  background: #ebebeb;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .offer-section {
+    padding: 0 5px;
+  }
+}
+
+.offer-caret {
+  text-align: center;
+  color: #414141;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.offer-caret svg {
+  height: 61px;
+  fill: currentColor;
+}
+
+@media (max-width: 480px) {
+  .offer-caret {
+    margin-bottom: -25px;
+  }
+}
+
+.offer-section .pricing-wrapper {
+  margin-top: 8px;
+}
+
+.offer-section .nd-reviews-wrap {
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  .offer-section .nd-reviews-wrap {
+    margin-top: 30px;
+  }
+}
+
+/* Prova social (abaixo dos depoimentos) */
+.sp-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.sp-stars {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0 1px 0 #000;
+}
+
+.sp-count {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+/* ---------- Garantia (esconder) ---------- */
+.guarantee-section {
+  background: #ebebeb;
+  padding-bottom: 25px;
+}
+
+.guarantee-title {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 800;
+  color: #7a7a7a;
+  padding: 20px 10px 10px;
+}
+
+@media (max-width: 480px) {
+  .guarantee-title {
+    font-size: 22px;
+  }
+}
+
+.guarantee-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.guarantee-text p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+  .guarantee-row {
+    flex-direction: column;
+  }
+
+  .guarantee-text p {
+    text-align: center;
+  }
+}
+
+.guarantee-badges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 34%;
+  margin: 20px auto 0;
+  flex-wrap: nowrap;
+}
+
+.guarantee-badges img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .guarantee-badges {
+    width: 98%;
+  }
+}
+
+/* ---------- Oferta final (esconder) ---------- */
+.bottom-offer {
+  background: #ebebeb;
+  padding: 8px 0 30px;
+}
+
+@media (max-width: 480px) {
+  .bottom-offer {
+    padding: 8px 5px 30px;
+  }
+}
+
+
+/* ---------- Pricing table (portado do original) ---------- */
+.pricing-wrapper * {
+                    box-sizing: border-box;
+                    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    margin: 0;
+                    padding: 0
+                  }
+
+                  .pricing-wrapper {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background-color: transparent;
+                    padding: 20px 10px
+                  }
+
+                  .pricing-container {
+                    width: 100%;
+                    max-width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px
+                  }
+
+                  .card {
+                    border-radius: 18px;
+                    position: relative;
+                    background: #fff;
+                    display: block;
+                    text-decoration: none;
+                    color: inherit;
+                    cursor: pointer;
+                    transition: transform .3s cubic-bezier(.25, .8, .25, 1), box-shadow .3s ease;
+                    z-index: 1;
+                    margin: 0
+                  }
+
+                  .card:hover {
+                    transform: scale(1.02);
+                    z-index: 10;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, .12)
+                  }
+
+                  .highlight-header {
+                    background-color: #ee484e;
+                    color: #fff;
+                    padding: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: center;
+                    width: 100%;
+                    border-radius: 18px 18px 0 0;
+                    position: relative;
+                    z-index: 2
+                  }
+
+                  .gray-header {
+                    display: none;
+                    background-color: #a6a6a6;
+                    color: #fff;
+                    padding: 10px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border-radius: 15px 15px 0 0
+                  }
+
+                  .highlight-body {
+                    background: linear-gradient(180deg, #fae7b8 0, #fef6e0 100%);
+                    border: 3px solid #000;
+                    border-top: none;
+                    border-radius: 0 0 18px 18px;
+                    padding-top: 5px
+                  }
+
+                  .card.standard {
+                    border: 3px solid #a6a6a6;
+                    background: #fff;
+                    border-radius: 18px
+                  }
+
+                  .card-row {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 12px;
+                    gap: 8px;
+                    align-items: center
+                  }
+
+                  .col-left {
+                    width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center
+                  }
+
+                  .col-right {
+                    width: 55%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center
+                  }
+
+                  h3 {
+                    font-size: 19px;
+                    font-weight: 800;
+                    color: #000;
+                    margin-bottom: -2px;
+                    text-transform: uppercase;
+                    line-height: 1.1
+                  }
+
+                  .subtitle {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #000;
+                    margin-bottom: 2px
+                  }
+
+                  .product-img {
+                    max-width: 100%;
+                    width: 110px;
+                    height: auto;
+                    object-fit: contain;
+                    margin: 15px 0
+                  }
+
+                  .product-img.product-img-lg {
+                    width: 150px
+                  }
+
+                  .total-price-row {
+                    font-size: 18px;
+                    margin-top: 2px;
+                    font-weight: 800;
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                  }
+
+                  .strike-red {
+                    text-decoration: line-through;
+                    text-decoration-color: #ee484e;
+                    -webkit-text-decoration-color: #ee484e;
+                    text-decoration-thickness: 2px;
+                    color: #999;
+                    margin-right: 5px;
+                    font-weight: 600
+                  }
+
+                  .unit-price-row {
+                    margin-bottom: 5px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    line-height: 1;
+                    color: #2b2b2b
+                  }
+
+                  .currency-symbol {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 6px;
+                    margin-right: 1px
+                  }
+
+                  .big-number {
+                    font-size: 52px;
+                    font-weight: 800;
+                    letter-spacing: -2px;
+                    color: #2b2b2b;
+                    line-height: 1
+                  }
+
+                  .per-unit {
+                    font-size: 10px;
+                    font-weight: 600;
+                    align-self: flex-end;
+                    margin-bottom: 8px;
+                    margin-left: 2px;
+                    text-transform: uppercase;
+                    color: #333
+                  }
+
+                  .badges-container {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    margin-bottom: 8px;
+                    margin-left: auto;
+                    margin-right: auto
+                  }
+
+                  .badge {
+                    color: #fff;
+                    font-size: 10px;
+                    padding: 4px 2px;
+                    border-radius: 5px;
+                    font-weight: 700;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+                    line-height: 1
+                  }
+
+                  .badge svg {
+                    width: 10px;
+                    height: 10px;
+                    fill: white
+                  }
+
+                  .bg-red {
+                    background-color: #ee484e
+                  }
+
+                  .bg-black {
+                    background-color: #000
+                  }
+
+                  .bg-green {
+                    background-color: #4a8b6c
+                  }
+
+                  .btn-visual {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    width: 100%;
+                    padding: 8px 0;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    font-weight: 800;
+                    text-decoration: none;
+                    color: #000;
+                    transition: transform .1s;
+                    margin-bottom: 2px
+                  }
+
+                  .btn-visual svg {
+                    width: 16px;
+                    height: 16px
+                  }
+
+                  .btn-gold-3d {
+                    background: linear-gradient(180deg, #fddb63 0, #fbc02d 100%);
+                    border: 1px solid #eb4;
+                    box-shadow: 0 4px 0 #bc822c
+                  }
+
+                  .card:active .btn-gold-3d {
+                    box-shadow: 0 2px 0 #bc822c;
+                    transform: translateY(2px)
+                  }
+
+                  .btn-gray-3d {
+                    background: linear-gradient(180deg, #ccc 0, #e6e6e6 100%);
+                    border: 1px solid #bbb;
+                    box-shadow: 0 4px 0 #a6a6a6
+                  }
+
+                  .card:active .btn-gray-3d {
+                    box-shadow: 0 2px 0 #a6a6a6;
+                    transform: translateY(2px)
+                  }
+
+                  .payment-icons {
+                    width: 120px;
+                    height: auto;
+                    margin-top: 5px;
+                    display: block
+                  }
+
+                  .shipping-text {
+                    font-style: italic;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    color: #000
+                  }
+
+                  @media (min-width:769px) {
+                    .pricing-container {
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      max-width: 1100px;
+                      gap: 25px
+                    }
+
+                    .pricing-container>div:nth-of-type(2) {
+                      order: 1
+                    }
+
+                    .pricing-container>a {
+                      order: 2
+                    }
+
+                    .pricing-container>div:first-of-type {
+                      order: 3
+                    }
+
+                    .desktop-card-wrapper {
+                      display: flex;
+                      flex-direction: column;
+                      flex: 0 0 300px;
+                      max-width: 300px;
+                      border: 3px solid #a6a6a6;
+                      border-radius: 18px;
+                      overflow: hidden;
+                      background: #fff;
+                      transition: transform .3s ease;
+                      margin-top: 0
+                    }
+
+                    .card.highlight {
+                      flex: 0 0 300px;
+                      max-width: 300px;
+                      transform: scale(1.1);
+                      z-index: 5;
+                      margin-top: 0
+                    }
+
+                    .desktop-card-wrapper:hover {
+                      transform: scale(1.05);
+                      box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+                      z-index: 10
+                    }
+
+                    .card.highlight:hover {
+                      transform: scale(1.15)
+                    }
+
+                    .card-row {
+                      flex-direction: column;
+                      padding: 15px;
+                      text-align: center;
+                      gap: 4px
+                    }
+
+                    .col-left,
+                    .col-right {
+                      display: contents
+                    }
+
+                    .col-left h3 {
+                      order: 1;
+                      margin-bottom: 0
+                    }
+
+                    .col-left .subtitle {
+                      order: 2;
+                      margin-bottom: 2px
+                    }
+
+                    .col-left .product-img {
+                      order: 3;
+                      width: 150px;
+                      margin: 15px 0
+                    }
+
+                    .col-left .product-img.product-img-lg {
+                      width: 200px
+                    }
+
+                    .col-right .unit-price-row {
+                      order: 4;
+                      justify-content: center;
+                      margin-bottom: 2px
+                    }
+
+                    .col-right .badges-container,
+                    .col-right .shipping-text {
+                      order: 5;
+                      margin-bottom: 8px
+                    }
+
+                    .col-right .btn-visual {
+                      order: 6;
+                      width: 90%;
+                      margin: 0 auto
+                    }
+
+                    .col-right .payment-icons {
+                      order: 7;
+                      margin-top: 5px
+                    }
+
+                    .col-left .total-price-row {
+                      order: 8;
+                      margin-top: 8px;
+                      margin-bottom: 0
+                    }
+
+                    .gray-header {
+                      display: block;
+                      padding: 8px
+                    }
+
+                    .desktop-card-wrapper .card.standard {
+                      border: none;
+                      border-radius: 0;
+                      box-shadow: none
+                    }
+
+                    .highlight-body.card-row {
+                      padding-top: 10px;
+                      padding-bottom: 15px
+                    }
+                  }
+
+/* Seta animada do botao de 6 potes */
+.btn-6flaschen {
+      position: relative !important;
+      overflow: visible !important
+    }
+
+    .btn-6flaschen::after {
+      content: "👈🏻";
+      position: absolute;
+      right: -5px;
+      top: 95%;
+      font-size: 48px;
+      line-height: 1;
+      pointer-events: none;
+      z-index: 9999;
+      filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .35)) drop-shadow(0 6px 6px rgba(0, 0, 0, .25));
+      animation: tsPoint 1.8s ease-in-out infinite;
+      transform: translateY(-50%) translate(0, 0) rotate(40deg)
+    }
+
+    @keyframes tsPoint {
+
+      0%,
+      100% {
+        transform: translateY(-50%) translate(0, 0) rotate(40deg)
+      }
+
+      50% {
+        transform: translateY(-50%) translate(12px, 8px) rotate(60deg)
+      }
+    }
+
+    @media(max-width:768px) {
+      .btn-6flaschen::after {
+        font-size: 34px;
+        right: -15px
+      }
+    }
+
+/* ---------- Depoimentos (portado, recolorido p/ SodaPeak) ---------- */
+.nd-reviews-wrap {
+                    max-width: 680px;
+                    margin: 0 auto;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                    color: #1a1a1a;
+                    padding: 16px
+                  }
+
+                  .nd-pill {
+                    display: inline-block;
+                    background: #f3e6fa;
+                    color: #741094;
+                    font-weight: 700;
+                    font-size: 13px;
+                    padding: 8px 18px;
+                    border-radius: 999px;
+                    margin-bottom: 14px;
+                    letter-spacing: .3px
+                  }
+
+                  .nd-title {
+                    font-size: 26px;
+                    font-weight: 800;
+                    line-height: 1.25;
+                    margin: 0 0 10px;
+                    color: #0f2a2c
+                  }
+
+                  .nd-title span {
+                    color: #741094
+                  }
+
+                  .nd-sub {
+                    font-size: 15px;
+                    color: #4a4a4a;
+                    margin: 0 0 22px;
+                    line-height: 1.5
+                  }
+
+                  .nd-img {
+                    width: 100%;
+                    border-radius: 14px;
+                    display: block;
+                    margin: 0 auto 22px;
+                    box-shadow: 0 6px 18px rgba(0, 0, 0, .08)
+                  }
+
+                  .nd-card {
+                    background: #fff;
+                    border: 1px solid #ececec;
+                    border-radius: 14px;
+                    padding: 18px;
+                    margin: 0 auto 16px;
+                    max-width: 680px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, .04)
+                  }
+
+                  .nd-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 8px;
+                    flex-wrap: wrap;
+                    gap: 6px
+                  }
+
+                  .nd-user {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px
+                  }
+
+                  .nd-avatar {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid #f3e6fa;
+                    display: block
+                  }
+
+                  .nd-name {
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: #0f2a2c
+                  }
+
+                  .nd-verified {
+                    font-size: 12px;
+                    color: #741094;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px
+                  }
+
+                  .nd-stars {
+                    color: #f5a623;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    margin-bottom: 6px
+                  }
+
+                  .nd-text {
+                    font-size: 14.5px;
+                    line-height: 1.55;
+                    color: #333;
+                    margin: 0
+                  }
+
+                  .nd-text strong {
+                    color: #0f2a2c
+                  }
+
+                  @media(max-width:520px) {
+                    .nd-title {
+                      font-size: 22px
+                    }
+
+                    .nd-reviews-wrap {
+                      padding: 12px
+                    }
+                  }
+
+/* ---------- Purchase notification (portado, recolorido p/ SodaPeak) ---------- */
+.nd-pop-wrap * {
+                    box-sizing: border-box;
+                    font-family: Inter, Arial, sans-serif
+                  }
+
+                  .nd-pop {
+                    position: fixed;
+                    left: 20px;
+                    bottom: 20px;
+                    z-index: 99999;
+                    background: #741094;
+                    color: #fff;
+                    border-radius: 12px;
+                    padding: 12px 16px 12px 12px;
+                    display: none;
+                    align-items: center;
+                    gap: 12px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+                    max-width: 340px;
+                    min-width: 280px;
+                    animation: ndSlideIn .5s ease-out
+                  }
+
+                  .nd-pop.show {
+                    display: flex
+                  }
+
+                  @keyframes ndSlideIn {
+                    from {
+                      transform: translateY(120%);
+                      opacity: 0
+                    }
+
+                    to {
+                      transform: translateY(0);
+                      opacity: 1
+                    }
+                  }
+
+                  @keyframes ndSlideOut {
+                    from {
+                      transform: translateY(0);
+                      opacity: 1
+                    }
+
+                    to {
+                      transform: translateY(120%);
+                      opacity: 0
+                    }
+                  }
+
+                  .nd-pop.hide {
+                    animation: ndSlideOut .4s ease-in forwards
+                  }
+
+                  .nd-pop img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: contain;
+                    flex-shrink: 0;
+                    background: 0 0 !important;
+                    padding: 0 !important;
+                    border-radius: 0 !important
+                  }
+
+                  .nd-pop-body {
+                    flex: 1;
+                    min-width: 0;
+                    line-height: 1.25
+                  }
+
+                  .nd-pop-name {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #fff;
+                    margin: 0 0 2px
+                  }
+
+                  .nd-pop-title {
+                    font-size: 16px;
+                    font-weight: 800;
+                    color: #ffde59;
+                    margin: 0 0 4px;
+                    letter-spacing: .2px
+                  }
+
+                  .nd-pop-meta {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 12px;
+                    color: #fff
+                  }
+
+                  .nd-pop-verified {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 3px;
+                    background: #fff;
+                    color: #741094;
+                    font-weight: 700;
+                    padding: 2px 7px;
+                    border-radius: 20px;
+                    font-size: 11px
+                  }
+
+                  .nd-pop-verified svg {
+                    width: 11px;
+                    height: 11px
+                  }
+
+                  .nd-pop-close {
+                    position: absolute;
+                    top: 6px;
+                    right: 8px;
+                    background: 0 0;
+                    border: 0;
+                    color: #fff;
+                    font-size: 18px;
+                    cursor: pointer;
+                    opacity: .7;
+                    line-height: 1
+                  }
+
+                  .nd-pop-close:hover {
+                    opacity: 1
+                  }
+
+                  @media(max-width:480px) {
+                    .nd-pop {
+                      left: 10px;
+                      right: 10px;
+                      bottom: 10px;
+                      max-width: none;
+                      min-width: 0
+                    }
+
+                    .nd-pop img {
+                      width: 64px;
+                      height: 64px
+                    }
+
+                    .nd-pop-title {
+                      font-size: 14px
+                    }
+                  }
+  
+  /* Capa de carregamento da VSL (por cima do player ate o video comecar) */
+  .vsl-box { position: relative; max-width: 400px; margin: 0 auto; isolation: isolate; }
+  #vsl-capa { position: absolute; inset: 0; z-index: 50; pointer-events: none; background: #000 url(images/vsl-carregando-4f4d1b.webp) center / cover no-repeat; transition: opacity .25s ease; }
+  #vsl-capa::after { content: ""; position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; border: 3px solid rgba(255, 255, 255, .3); border-top-color: #fff; animation: vslspin .9s linear infinite; }
+  #vsl-capa.saindo { opacity: 0; }
+  @keyframes vslspin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { #vsl-capa::after { animation-duration: 2.4s; } }
+  </style>
+</head>
+
+<body>
+  <!-- Barra de atencao (data preenchida pelo js/main.js) -->
+  <section class="attention-bar">
+    <strong>Attention: This presentation is only available until <span id="dataHoje">10/07/2026</span></strong>
+  </section>
+  <script>(function () { var el = document.getElementById("dataHoje"); if (!el) return; var d = new Date(); el.textContent = ("0" + (d.getMonth() + 1)).slice(-2) + "/" + ("0" + d.getDate()).slice(-2) + "/" + d.getFullYear(); })();</script>
+
+  <!-- VSL -->
+  <section class="video-section">
+    <div class="video-wrap">
+      <!-- VSL (vturb): player individual. -->
+      <div class="vsl-box">
+      <vturb-smartplayer id="vid-6ad92a0cc5e93d1544cfaa67" style="display:block;margin:0 auto;width:100%;max-width:400px">
+        <div class="vturb-player-placeholder" style="position:relative;width:100%;padding:178.21782178217822% 0 0;z-index:0;background-color:black"></div>
+      </vturb-smartplayer>
+      <script type="text/javascript">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/a5d949d0-afd0-44a6-8c0f-d132c18157a6/players/6ad92a0cc5e93d1544cfaa67/v4/player.js", s.async = !0, document.head.appendChild(s);</script>
+      <div id="vsl-capa" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner da oferta (revelado no pitch do VSL) -->
+  <section class="reveal-banner esconder">
+    <div class="container">
+      <h2>
+        <span style="display:block">Secure your discounted SodaPeak now</span>
+        <span style="display:block;font-style:italic">Only while supplies last!</span>
+      </h2>
+      <div class="countdown" id="countdown">19:59</div>
+    </div>
+  </section>
+
+  <!-- Oferta: tabela de precos + depoimentos -->
+  <section class="offer-section esconder">
+    <div class="container">
+      <div class="offer-caret"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="a-i-e-cont svg-inline--fa fa-caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z">
+                  </path>
+                </svg></div>
+      <div class="pricing-wrapper">
+                  <div class="pricing-container"><a href="https://pay.pagamerican.app/zjV4gQ82?aff=lmQqdgum" class="card highlight">
+                      <div class="highlight-header">MOST POPULAR!</div>
+                      <div class="card-row highlight-body">
+                        <div class="col-left">
+                          <h3>6 BOTTLES</h3>
+                          <div class="subtitle">180-Day Supply</div><img src="images/sodapeak-6.webp" alt="6 Bottles" class="product-img-lg product-img" width="150" height="150" loading="lazy">
+                          <div class="total-price-row"><span class="strike-red">$1074</span> $294</div>
+                        </div>
+                        <div class="col-right">
+                          <div class="unit-price-row"><span class="currency-symbol">$</span><span class="big-number">49</span><span class="per-unit">/Bottle</span></div>
+                          <div class="badges-container">
+                            <div class="badge bg-red"><svg viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                </path>
+                              </svg> VIP Support</div>
+                            <div class="bg-black badge"><svg viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                </path>
+                              </svg> FREE BONUS!</div>
+                            <div class="bg-green badge"><svg viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                </path>
+                              </svg> Free Shipping</div>
+                          </div>
+                          <div class="btn-gold-3d btn-visual btn-6flaschen">Buy Now <svg viewBox="0 0 576 512" fill="currentColor">
+                              <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z">
+                              </path>
+                            </svg></div><img src="images/nqkNHJ5101409.webp" alt="Payment Methods" class="payment-icons" width="120" height="25" loading="lazy">
+                        </div>
+                      </div>
+                    </a>
+                    <div class="desktop-card-wrapper">
+                      <div class="gray-header">BUNDLE</div><a href="https://pay.pagamerican.app/94SJU2Rg?aff=lmQqdgum" class="standard card" style="height:100%">
+                        <div class="card-row">
+                          <div class="col-left">
+                            <h3>3 BOTTLES</h3>
+                            <div class="subtitle">90-Day Supply</div><img src="images/sodapeak-3.webp" alt="3 Bottles" class="product-img-lg product-img" width="150" height="150" loading="lazy">
+                            <div class="total-price-row"><span class="strike-red">$537</span> $207</div>
+                          </div>
+                          <div class="col-right">
+                            <div class="unit-price-row"><span class="currency-symbol">$</span><span class="big-number">69</span><span class="per-unit">/Bottle</span></div>
+                            <div class="badges-container">
+                              <div class="bg-black badge"><svg viewBox="0 0 512 512">
+                                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                  </path>
+                                </svg> FREE BONUS!</div>
+                              <div class="bg-green badge"><svg viewBox="0 0 512 512">
+                                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                  </path>
+                                </svg> Free Shipping</div>
+                            </div>
+                            <div class="btn-visual btn-gray-3d">Buy Now <svg viewBox="0 0 576 512" fill="currentColor">
+                                <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z">
+                                </path>
+                              </svg></div><img src="images/cxexyF0026619.webp" alt="Payment Methods" class="payment-icons" width="120" height="25" loading="lazy">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="desktop-card-wrapper">
+                      <div class="gray-header">STARTER</div><a href="https://pay.pagamerican.app/Lk9pzFA0?aff=lmQqdgum" class="card standard" style="height:100%">
+                        <div class="card-row">
+                          <div class="col-left">
+                            <h3>2 BOTTLES</h3>
+                            <div class="subtitle">60-Day Supply</div><img src="images/sodapeak-2.webp" alt="2 Bottles" class="product-img" width="150" height="150" loading="lazy">
+                            <div class="total-price-row"><span class="strike-red">$358</span> $158</div>
+                          </div>
+                          <div class="col-right">
+                            <div class="unit-price-row"><span class="currency-symbol">$</span><span class="big-number">79</span><span class="per-unit">/Bottle</span></div>
+                            <div class="shipping-text">+ Free Shipping</div>
+                            <div class="btn-gray-3d btn-visual">Buy Now <svg viewBox="0 0 576 512" fill="currentColor">
+                                <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z">
+                                </path>
+                              </svg></div><img src="images/cxexyF0026619.webp" alt="Payment Methods" class="payment-icons" width="120" height="25" loading="lazy">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      <div class="nd-reviews-wrap">
+                  <h2 class="nd-title"><span>The</span> Real SodaPeak® Users.<br>Life Changing Results.</h2>
+                  <p class="nd-sub">See what thousands of men are saying after adding SodaPeak to their daily routine no
+                    more weak erections, no more performance anxiety… just rock-hard results and confidence that lasts
+                    all night..</p>
+                  <div class="nd-card">
+                    <div class="nd-head">
+                      <div class="nd-user"><img class="nd-avatar" src="images/YgapzG4316709.webp" alt="James Miller" loading="lazy">
+                        <span class="nd-name">James Miller</span></div><span class="nd-verified">✓ Verified
+                        Purchase</span>
+                    </div>
+                    <div class="nd-stars">★★★★★</div>
+                    <p class="nd-text">"I was honestly skeptical at first 🤔… but after a few weeks on SodaPeak, I
+                      started noticing a real difference. At 62, I wasn’t expecting this kind of performance again 💪.
+                      Stronger, longer-lasting results and way more confidence in the bedroom."</p>
+                  </div>
+                  <div class="nd-card">
+                    <div class="nd-head">
+                      <div class="nd-user"><img class="nd-avatar" src="images/XbFCYG6833801.webp" alt="John Reed" loading="lazy"> <span class="nd-name">John Reed</span></div><span class="nd-verified">✓ Verified Purchase</span>
+                    </div>
+                    <div class="nd-stars">★★★★★</div>
+                    <p class="nd-text">"I’m 58 and thought those days were long gone 😅… but this completely surprised
+                      me. No more awkward moments, just solid performance and feeling like myself again. My confidence
+                      is back 🔥"</p>
+                  </div>
+                  <div class="nd-card">
+                    <div class="nd-head">
+                      <div class="nd-user"><img class="nd-avatar" src="images/MpDPdX4316709.webp" alt="Michael B." loading="lazy">
+                        <span class="nd-name">Michael B.</span></div><span class="nd-verified">✓ Verified
+                        Purchase</span>
+                    </div>
+                    <div class="nd-stars">★★★★★</div>
+                    <p class="nd-text">"Day 5 and I feel like a completely different man. Energy through the roof,
+                      confidence back, everything working like it should 💪<br><br>Wasnt even a full week and my wife
+                      asked what got into me lol. Told her it was vitamins 😅 close enough right"</p>
+                  </div>
+                </div>
+      <p class="sp-title">What our customers say</p>
+      <p class="sp-stars">⭐️⭐️⭐️⭐️⭐️ ☑️ 4.91/5</p>
+      <p class="sp-count">Based on over 79,200 reviews!</p>
+    </div>
+  </section>
+
+  <!-- Garantia -->
+  <section class="guarantee-section esconder">
+    <div class="container">
+      <h2 class="guarantee-title">100% Satisfaction or Your Money Back<br><strong>60-Day Unconditional
+          Guarantee</strong></h2>
+      <div class="guarantee-row">
+        <div class="guarantee-badge"><img loading="lazy" width="200" height="200" src="images/eMmJzh2803597.webp" alt="60-Day Guarantee"></div>
+        <div class="guarantee-text">
+          <p>We're so certain that SodaPeak will give you remarkable results that we're willing to shoulder all the risk
+            for a full 60 days. From the moment your order arrives, start taking SodaPeak daily and pay close attention
+            to how you feel.</p>
+          <p>If at any point during these 60 days you don't feel SodaPeak is delivering on the promise we've made, just
+            let us know. Our team will refund every penny, no questions asked.</p>
+        </div>
+      </div>
+      <div class="guarantee-badges">
+        <img loading="lazy" width="319" height="319" src="images/65551332-7546-4a3b-a5ae-60c85ae868c3-misc-src.png" alt="Badge">
+        <img loading="lazy" width="319" height="319" src="images/c71403e0-2b35-4ed6-9542-5c697d222eae-misc-src.webp" alt="Badge">
+        <img loading="lazy" width="319" height="319" src="images/a66015f5-ba45-457c-bf00-a890c99e7bb2-misc-src.webp" alt="Badge">
+        <img loading="lazy" width="319" height="319" src="images/5ef56dee-3fff-48ba-bbbf-45a82fa9a7b1-misc-src.png" alt="Badge">
+      </div>
+    </div>
+  </section>
+
+  <!-- Oferta final -->
+  <section class="bottom-offer esconder">
+    <div class="container">
+      <div class="pricing-wrapper">
+                  <div class="pricing-container"><a href="https://pay.pagamerican.app/zjV4gQ82?aff=lmQqdgum" class="card highlight">
+                      <div class="highlight-header">MOST POPULAR!</div>
+                      <div class="card-row highlight-body">
+                        <div class="col-left">
+                          <h3>6 BOTTLES</h3>
+                          <div class="subtitle">180-Day Supply</div><img src="images/sodapeak-6.webp" alt="6 Bottles" class="product-img-lg product-img" width="150" height="150" loading="lazy">
+                          <div class="total-price-row"><span class="strike-red">$1074</span> $294</div>
+                        </div>
+                        <div class="col-right">
+                          <div class="unit-price-row"><span class="currency-symbol">$</span><span class="big-number">49</span><span class="per-unit">/Bottle</span></div>
+                          <div class="badges-container">
+                            <div class="badge bg-red"><svg viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                </path>
+                              </svg> VIP Support</div>
+                            <div class="bg-black badge"><svg viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                </path>
+                              </svg> FREE BONUS!</div>
+                            <div class="bg-green badge"><svg viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                </path>
+                              </svg> Free Shipping</div>
+                          </div>
+                          <div class="btn-gold-3d btn-visual btn-6flaschen">Buy Now <svg viewBox="0 0 576 512" fill="currentColor">
+                              <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z">
+                              </path>
+                            </svg></div><img src="images/nqkNHJ5101409.webp" alt="Payment Methods" class="payment-icons" width="120" height="25" loading="lazy">
+                        </div>
+                      </div>
+                    </a>
+                    <div class="desktop-card-wrapper">
+                      <div class="gray-header">BUNDLE</div><a href="https://pay.pagamerican.app/94SJU2Rg?aff=lmQqdgum" class="standard card" style="height:100%">
+                        <div class="card-row">
+                          <div class="col-left">
+                            <h3>3 BOTTLES</h3>
+                            <div class="subtitle">90-Day Supply</div><img src="images/sodapeak-3.webp" alt="3 Bottles" class="product-img-lg product-img" width="150" height="150" loading="lazy">
+                            <div class="total-price-row"><span class="strike-red">$537</span> $207</div>
+                          </div>
+                          <div class="col-right">
+                            <div class="unit-price-row"><span class="currency-symbol">$</span><span class="big-number">69</span><span class="per-unit">/Bottle</span></div>
+                            <div class="badges-container">
+                              <div class="bg-black badge"><svg viewBox="0 0 512 512">
+                                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                  </path>
+                                </svg> FREE BONUS!</div>
+                              <div class="bg-green badge"><svg viewBox="0 0 512 512">
+                                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                  </path>
+                                </svg> Free Shipping</div>
+                            </div>
+                            <div class="btn-visual btn-gray-3d">Buy Now <svg viewBox="0 0 576 512" fill="currentColor">
+                                <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z">
+                                </path>
+                              </svg></div><img src="images/cxexyF0026619.webp" alt="Payment Methods" class="payment-icons" width="120" height="25" loading="lazy">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="desktop-card-wrapper">
+                      <div class="gray-header">STARTER</div><a href="https://pay.pagamerican.app/Lk9pzFA0?aff=lmQqdgum" class="card standard" style="height:100%">
+                        <div class="card-row">
+                          <div class="col-left">
+                            <h3>2 BOTTLES</h3>
+                            <div class="subtitle">60-Day Supply</div><img src="images/sodapeak-2.webp" alt="2 Bottles" class="product-img" width="150" height="150" loading="lazy">
+                            <div class="total-price-row"><span class="strike-red">$358</span> $158</div>
+                          </div>
+                          <div class="col-right">
+                            <div class="unit-price-row"><span class="currency-symbol">$</span><span class="big-number">79</span><span class="per-unit">/Bottle</span></div>
+                            <div class="shipping-text">+ Free Shipping</div>
+                            <div class="btn-gray-3d btn-visual">Buy Now <svg viewBox="0 0 576 512" fill="currentColor">
+                                <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z">
+                                </path>
+                              </svg></div><img src="images/cxexyF0026619.webp" alt="Payment Methods" class="payment-icons" width="120" height="25" loading="lazy">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+    </div>
+  </section>
+
+  <!-- Purchase notification (o ciclo so comeca junto com o reveal da oferta - ver js/main.js) -->
+  <div class="nd-pop-wrap">
+                  <div id="ndPop" class="nd-pop"><button class="nd-pop-close" onclick="ndClosePop()">×</button> <img id="ndPopImg" src="" alt="Product">
+                    <div class="nd-pop-body">
+                      <p class="nd-pop-name" id="ndPopName"></p>
+                      <p class="nd-pop-title" id="ndPopTitle"></p>
+                      <div class="nd-pop-meta"><span id="ndPopTime"></span> <span class="nd-pop-verified"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l2.39 4.84L20 7.91l-4 3.9.94 5.5L12 14.77 7.06 17.3 8 11.81l-4-3.9 5.61-1.07L12 2z">
+                            </path>
+                          </svg> VERIFIED</span></div>
+                    </div>
+                  </div>
+                </div>
+
+  <!-- Capa de carregamento da VSL: fica por cima do player ate o video comecar a tocar (no lugar da caixa preta).
+       Sai quando: o video passa de 0 s; 5 s depois do player:ready sem tocar (ex.: autoplay bloqueado, o visitante
+       precisa ver o botao do player); no 1o toque na area do video; ou em 20 s. Nao mexe no reveal (.esconder). -->
+  <script>
+    (function () {
+      var capa = document.getElementById('vsl-capa');
+      if (!capa) return;
+      var saiu = false, armado = false;
+      function tirar() {
+        if (saiu) return;
+        saiu = true;
+        capa.className += ' saindo';
+        setTimeout(function () { capa.style.display = 'none'; }, 300);
+      }
+      capa.parentNode.addEventListener('pointerdown', tirar, { capture: true, passive: true });
+      function vigiar(player) {
+        var pronto = Date.now();
+        var iv = setInterval(function () {
+          if (saiu) { clearInterval(iv); return; }
+          var t = 0;
+          try { t = player.currentTime || 0; } catch (e) {}
+          if (t > 0 || Date.now() - pronto > 5000) { clearInterval(iv); tirar(); }
+        }, 100);
+      }
+      function onReady(event) {
+        if (armado) return;
+        armado = true;
+        var d = (event && event.detail) || {};
+        vigiar(d.player || document.querySelector('vturb-smartplayer'));
+      }
+      var el = document.querySelector('vturb-smartplayer');
+      if (el) el.addEventListener('player:ready', onReady);
+      document.addEventListener('player:ready', onReady);
+      setTimeout(tirar, 20000);
+    })();
+  </script>
+
+  <script src="js/main.js" defer=""></script>
+
+
+
+</body></html>
