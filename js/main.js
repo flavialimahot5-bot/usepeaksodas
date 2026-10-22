@@ -14,10 +14,10 @@ var CONFIG = {
   popup: {
     visibleTime: 6,      // segundos visivel
     intervalBetween: 10, // segundos entre popups
-    qtys: [2, 3, 6],
+    qtys: [2, 4, 6],
     bottleImages: {
       2: "images/sodapeak-2.webp",
-      3: "images/sodapeak-3.webp",
+      4: "images/sodapeak-4.webp",
       6: "images/sodapeak-6.webp"
     },
     people: ["Benjamin", "Michael", "James", "William", "Daniel", "Christopher", "David", "Henry", "John", "Robert", "Thomas", "Joseph", "Matthew", "Anthony", "Mark", "Richard", "Charles", "Paul", "Steven", "Andrew"],
