@@ -5,7 +5,7 @@
    ============================================================ */
 
 var CONFIG = {
-  // O momento do pitch agora vem do listPitch (teste A/B), mais abaixo neste arquivo.
+  // O momento do pitch vem do listPitch da VSL atual, mais abaixo neste arquivo.
 
   // Timer exibido no banner da oferta.
   countdownStart: "19:59",
@@ -43,16 +43,9 @@ var CONFIG = {
    PagAmerican. O que existia antes (injecao de um segundo track.js em lp.<host>
    + reescrita dos antigos links click/N) era duplicado e foi removido. */
 
-/* ---------- Revela a oferta no momento do pitch (listPitch por variante do A/B) ----------
-   Teste A/B: 6ab02bd76b009725a74f4d1b
-   Os ids abaixo sao os children[].id do bundle do player.js do teste (NAO o id do poster).
-   Delay em segundos = o "Pitch mm:ss" do nome de cada variante. */
+/* ---------- Revela a oferta em 01:03:20 da VSL atual ---------- */
 var listPitch = {
-  '6ab028ce665f0c5b45777d38': { delay: 3722 }, // (Facebook)(SodaPeak) VSL RIPADA-02 [NEW 1] - Pitch 62:02
-  '6ab028ce902fb7438c41eaa3': { delay: 3840 }, // (Facebook)(SodaPeak) VSL RIPADA-01 - Pitch 64:00
-  '6ab028ce624e3cacd6a27a19': { delay: 3722 }, // (Facebook)(SodaPeak) VSL RIPADA-02 [NEW 2] - Pitch 62:02
-  '6ab028ce80488426911ef769': { delay: 3437 }, // (Facebook)(SodaPeak) Micro 222 - Baking Soda - Pitch 57:17
-  '6ab028cedf06bd8953eb7b96': { delay: 3722 }, // (Facebook)(SodaPeak) VSL RIPADA-02 - Pitch 62:02
+  '6ad92a0cc5e93d1544cfaa67': { delay: 3800 }, // 1h03min20s
 };
 
 (function () {
